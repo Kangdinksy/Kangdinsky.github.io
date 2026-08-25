@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <TITLE>MOOC Style of Computer Graphics </TITLE>
+  </head>
+<body>
+<pre><H1> Computer Graphics for Java Programmers in MOOC Style</a></H1></pre>
+
+<p>
+<hr>
+(Click on a topic to view and listen to the video)
+<H4>
+    <ol>
+      <li><a href="#Display" class="video-links" data-link="Topic00.mp4">Introduction</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic01.mp4">The Discrete Nature of Display</a></li>
+      <li><a href="#" class="video-links" data-link="Topic02.mp4">Coordinate Systems</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic03.mp4">Mapping Between Device and Logical Coordinate Systems</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic04.mp4">An Example: Defining a Polygon Using Mouse</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic05.mp4">Orientation of A Triangle</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic06.mp4">Orientation of A Polygon</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic07.mp4">Point-In-Polygon Test</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic08.mp4">Point and Line Relationships</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic09.mp4">Triangulation of Polygons</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic10.mp4">How to Draw a Straight Line?</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic11.mp4">Basic Incremental Algorithm</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic12.mp4">Bresenham Line Algorithm</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic13.mp4">How to Clip a Line?</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic14.mp4">Cohen-Sutherland Algorithm for Line Clipping</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic15.mp4">Polygon Clipping</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic16.mp4">Bezier Curves</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic17.mp4">Connecting Two Bezier Curves</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic18.mp4">Perspective</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic19.mp4">Viewing Transformation</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic20.mp4">Perspective Transformation</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic21.mp4">A Cube in Perspective</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic22.mp4">Hidden-Line Elimination</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic23.mp4">Hidden-Face Elimination</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic24.mp4">Painter's Algorithm</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic25.mp4">Z-Buffer Algorithm</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic26.mp4">Computing Z in Z-Buffer Algorithm</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic27.mp4">Coloring Visible Faces</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic28.mp4">Specification of 3D Objects</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic29.mp4">An Example: Specifying A General Cylinder</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic30.mp4">Fractals</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic31.mp4">L-Grammars</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic32.mp4">Adding More Rule</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic33.mp4">Mandelbrot Set and Julia Set</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic34.mp4">Color Theory and RGB Systeme</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic35.mp4">HSL Color System</a></li>
+      <li><a href="#Display" class="video-links" data-link="Topic36.mp4">Transparency and Texture</a></li>
+    </ol>
+</H4>
+<P>
+
+<HR>
+<a NAME="Display"></a> 
+<H2>
+<div class="video-title">Introduction
+</H2>
+    <video width="870" height="500" controls="controls" id="dyn-video">
+      <source src="http://www.art4.gift/MOOC/Topic00.mp4" type="video/mp4">
+    </video>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      var baseLink = "http://www.art4.gift/MOOC/";
+      var videoLinks = $(".video-links");
+      var videoTitle = $(".video-title");
+      var video = $("#dyn-video")[0];
+      var videoSrc = $("#dyn-video source");
+      videoLinks.click(function () {
+        videoTitle.text($(this).text());
+        video.pause();
+        $(videoSrc).attr('src', baseLink + $(this).attr('data-link'));
+        video.load();
+        video.play();
+      });
+    </script>
+</div> 
+
+<P>
+<a href="http://www.art4.gift" target="_top"><img align=middle src="P
+ictures/name.gif" alt="My Chinese name" width=100 height=50><br><small><font col
+or="#999999">Kang's Art Page</font></a></small>
+
+</body>
+</html>
+
+
+
