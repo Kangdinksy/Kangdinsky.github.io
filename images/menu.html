@@ -1,0 +1,192 @@
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9E2J2STR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M9E2J2STR7');
+</script>
+
+<title>Kang Zhang Menu Page</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+</head>
+<body topmargin="10" align="center" style="font-family: Arial">
+<script type="application/processing">
+void setup() {
+    size(160, 120);
+}
+ 
+void draw() {
+    int s = second()*2;       //(0 - 59)*4 = 0 - 240
+    int m = minute()*2;       //Same as above
+    int h = hour()*2;         //Same as above
+    float deg = 180;          //Value for rotating
+    float rad = radians(deg); //Value in degrees
+     
+    background(65);
+           
+    fill(255, 255, 0);
+    rect(20, 0, 120, 120);  
+    
+    fill(237,48,60); 
+    textAlign(CENTER);
+
+    text(hour(), 10, 120-h);
+    text(minute(), width/2, 118-m);
+    text(second(), 150, 120-s);
+    
+    //Graph
+    noStroke();
+    translate(80, 120);
+    rotate(rad);
+    
+    fill(20,180,80);       //Hour Block
+    rect(00, 0, 60, m);
+    triangle(00, m, 60, h, 60, m);   
+    fill(225,129,54);      //Minute Block
+    triangle(0, m, 60, h, 60, 120);
+     
+    fill(30,30,230); 
+    triangle(0, 0, 0, m, -60, 0);
+    fill(237,48,60);      //Second Block
+    triangle(-60, 0, -60, s, 0, m);
+}
+</script>
+<canvas> </canvas>
+<P>
+<!---
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ArtClockSmall : Built with Processing and Processing.js</title>
+    <link rel="icon"  type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAQAAVzABAEAjBQAaDwYAWjUGAGE6CQBrQQ0ATS8PAFhAJwBUQC8AbFI6AHVXPACBZk4A4NrWAPb19QAAAAAAAMmZmZmZmgAJIwAAAAAAcMIjPjA+PjAKpxIuMDMzMAm0Ii4zMzMACaIiLt3dMAAJtyIuIzPQAAm0Un5yM+IzKLRkfncy4iIotRF+dyLkIiq0QX53F+EiGrQUTkd34iIatEVu7u5iIVrBVVRBRFRVbAtGZGZla2uwAMu7u7u8vADAAwAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAADAAwAA" />
+    <meta name="Generator" content="Processing" />
+    
+    <script src="processing.js" type="text/javascript"></script>
+    <script type="text/javascript">
+// convenience function to get the id attribute of generated sketch html element
+function getProcessingSketchId () { return 'ArtClockSmall'; }
+</script>
+--->
+<style fprolloverstyle>A:hover {color: #FF0000; font-family: Arial; font-weight: bold}
+</style>
+<base target="content">
+
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111">
+  <tr>
+    <td>
+      <p align="right">
+      <b>
+      <font face="Arial" size="3" valign="bottom" >
+      <a href="contact.html" style="text-decoration: none">Contacts</a></font></b>
+    </td>  
+    <td>
+    <img border="0" src="images/right.jpg" align="right" width="12" height="27"></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="10">
+    <img border="0" src="images/bottom.jpg" align="right" valign="bottom" width="175" height="14"></td>
+  </tr>
+    
+  <tr>
+    <td>
+      <p align="right">
+      <b>
+      <font face="Arial" size="3">
+      <a href="students.html" style="text-decoration: none">Students</a></font></b></td>  
+    <td>
+    <img border="0" src="images/right.jpg" align="right" width="12" height="27"></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="10">
+    <img border="0" src="images/bottom.jpg" align="right" valign="bottom" width="175" height="14"></td>
+  </tr>
+  <tr>
+    <td>
+      <p align="right">
+      <b>
+      <font face="Arial" size="3">
+      <a href="teaching.html" style="text-decoration: none">Teaching</a></font></b></td>  
+    <td>
+    <img border="0" src="images/right.jpg" align="right" width="12" height="27"></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="10">
+    <img border="0" src="images/bottom.jpg" align="right" valign="bottom" width="175" height="14"></td>
+  </tr>
+  <tr>
+    <td>
+      <p align="right">
+      <b>
+      <font face="Arial" size="3">
+      <a href="publication.html" style="text-decoration: none">Publications</a></font></b></td>  
+    <td>
+    <img border="0" src="images/right.jpg" align="right" width="12" height="27"></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="10">
+    <img border="0" src="images/bottom.jpg" align="right" valign="bottom" width="175" height="14"></td>
+  </tr>
+  <tr>
+    <td>
+      <p align="right">
+      <b>
+      <font face="Arial" size="3">
+      <a href="artpage.html" style="text-decoration: none">Art+Design</a></font></b></td>  
+    <td>
+    <img border="0" src="images/right.jpg" align="right" width="12" height="27"></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="10">
+    <img border="0" src="images/bottom.jpg" align="right" valign="bottom" width="175" height="14"></td>
+  </tr>
+  
+  <tr>
+    <td>
+      <p align="right">
+      <b>
+	<font face="Arial" size="3">
+      <a href="http://www.vinci-symp.org/" style="text-decoration: none">VINCI'2026</a></font></b></td> 
+    <td>
+    <img border="0" src="images/right.jpg" align="right" width="12" height="27"></td>
+  </tr>
+  <tr>
+     <td colspan="2" height="10">
+     <img border="0" src="images/bottom.jpg" align="right" valign="bottom" width="175" height="14"></td>
+  </tr>
+  <tr>
+    <td>
+      <p align="right">
+      <b>
+      <font face="Arial" size="3">
+      <a href="joke.html" style="text-decoration: none">Less Serious</a></font></b></td>  
+    <td>
+    <img border="0" src="images/right.jpg" align="right" width="12" height="27"></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="10">
+    <img border="0" src="images/bottom.jpg" align="right" valign="bottom" width="175" height="14"></td>
+  </tr>  
+<tr>
+    <td>
+      <p align="right">
+      <b>
+      <font face="Arial" size="3">    
+  </tr>
+  <tr>
+    <td colspan="2" height="30">
+    <img border="0" src="images/email_img.jpg" align="left" valign="bottom" width="180" height="42"></td>
+  </tr> 
+<!----
+  <div id="content">
+			<div>
+			<tr>
+     <canvas id="ArtClockSmall" data-processing-sources="ArtClockSmall.pde" 
+						width="160" height="120">
+					<p>Your browser does not support the canvas tag.</p>
+	</canvas> 
+  </tr>	 
+</TABLE>
+--->
+
